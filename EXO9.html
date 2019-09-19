@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Document sans nom</title>
+</head>
+
+<body>
+	
+	 <p>
+        <input type="text" id="ex9_input1" placeholder="Valeur en Kg"> => 
+        <b><span id="ex9_1_result"></span></b><br>
+        <button onclick="convertirToPound()">Convert Kg to Pounds</button>
+      </p>
+      
+	
+	
+	<p>
+        <input type="text" id="ex9_input2" placeholder="Valeur en Pounds">  => 
+        <b><span id="ex9_2_result"></span></b><br>
+        <button onclick="convertirToKg()">Convert Pounds to Kg</button>
+    </p>
+
+	<script>
+	
+		function convertirToPound(){
+		var nb_x = document.getElementById('ex9_input1').value;
+		var result1_ex9 = nb_x / 0.45359237;
+  		document.getElementById('ex9_1_result').innerHTML = result1_ex9;  
+}
+
+		function convertirToKg(){
+		var nb_y = document.getElementById('ex9_input2').value;
+		var result2_ex9 = nb_y * 0.45359237;
+  		document.getElementById('ex9_2_result').innerHTML = result2_ex9;  
+}
+
+	
+	</script>
+	
+	
+	
+</body>
+</html>

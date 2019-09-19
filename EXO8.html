@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Document sans nom</title>
+</head>
+
+<body>
+	<p>
+	Résultat : <span id="result"> </span>
+	</p>
+	
+	<script>
+	
+	function getFonction(first, second, third){
+	var soustraction = first / second % third;
+	document.getElementById('result').innerHTML = soustraction;	
+	}
+		
+	window.onload = getFonction(10,5, 12);
+	
+	
+	</script>
+	
+	
+	
+	
+	
+</body>
+</html>

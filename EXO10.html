@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Document sans nom</title>
+</head>
+
+<body>
+	
+	   <p>
+        <input type="text" id="ex10_input" placeholder="Entre un mot"> 
+        <button onclick="iterateWords()">Ajouter</button>
+        <button onclick="resetWords()">Reset </button>
+        <br>Sentence result : <b><span id="ex10_result"></span></b><br>
+      </p>
+
+	<script>
+	var nb_y = "";
+function iterateWords(){
+nb_y += document.getElementById('ex10_input').value;
+  document.getElementById('ex10_result').innerHTML = nb_y; 
+}
+
+function resetWords(){
+  nb_y = "";
+  document.getElementById('ex10_result').innerHTML = nb_y;
+}
+
+	</script>
+	
+</body>
+</html>

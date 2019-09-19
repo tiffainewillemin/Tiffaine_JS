@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Document sans nom</title>
+</head>
+
+<body>
+	
+	
+	<!--Exo 1.4-->
+	
+	<p>
+        <input type="text" id="ex1_input1" placeholder="Enter Value">
+        - <input type="text" id="ex1_input2" placeholder="Enter Value"><span> = <b id="result_ex4"></b></span>
+         <br>
+        <button onclick="getSoustraction();">Submit</button>  
+      </p>
+	
+	<script>
+function getSoustraction(){
+	var nb_x = document.getElementById('ex1_input1').value;
+	var nb_y = document.getElementById('ex1_input2').value;
+	var result_ex4 = eval('nb_x+' - '+ nb_y');
+	alert(result_ex4);
+	document.getElementById('result-exo-1-4').innerHTML = result_ex4;
+}
+		
+
+	</script>
+</body>
+</html>

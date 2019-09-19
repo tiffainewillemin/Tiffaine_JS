@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	</head>
+	<body>
+	<p>
+	<button onclick="dixplus();" id="ex4_input1"> plus 10</button>
+	<button onclick="cinqdiviser();" id="ex4_input2"> /5</button>
+	<button onclick="huitmult();" id="ex4_input3"> X8</button>
+	<button onclick="moinsdeux();" id="ex4_input4"> -2</button>
+    <button onclick="plusDixDeux();" id="ex4_input5"> +10 & -2</button>
+    <button onclick="Reset();" id="ex4_input6"> Reset</button>
+	<br>
+	Resultat : <span id="result-exo-4"></span>
+
+	</p>
+</body>
+
+<script>
+
+	var nb_a = 0; 
+
+	function dixplus(){
+	var nb_b = 10; 
+	var result_ex4 = eval(nb_a +=nb_b);
+	document.getElementById('result-exo-4').innerHTML = result_ex4;}
+
+	function dcinqdiviser(){
+	var nb_c = 5; 
+	var result_ex4 = eval(nb_a /=nb_c);
+	document.getElementById('result-exo-4').innerHTML = result_ex4;}
+
+	function huitmult(){
+	var nb_d = 8; 
+	var result_ex4 = eval(nb_a *=nb_d);
+	document.getElementById('result-exo-4').innerHTML = result_ex4;}
+
+	function moinsdeux(){
+	var nb_e = 2; 
+	var result_ex4 = eval(nb_a -=nb_e);
+	document.getElementById('result-exo-4').innerHTML = result_ex4;}
+
+	function plusDixDeux(){
+	var nb_b = 10;
+	var nb_e = 2
+	var result_ex4 = eval(nb_a +=nb_b -=nb_e);
+	document.getElementById('result-exo-4').innerHTML = result_ex4;}
+
+	function Reset(){
+	var nb_f = 0;
+	var result_ex4 = eval(nb_a *=nb_f);
+	document.getElementById('result-exo-4').innerHTML = result_ex4;}
+ 
+
+</script>
+</html>
+
